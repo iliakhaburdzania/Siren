@@ -101,6 +101,8 @@ public struct Localization {
         case ukrainian = "uk"
         /// Vietnamese Language Localization
         case vietnamese = "vi"
+        /// Georgian Language Localization
+        case georgian = "ka"
     }
 
     /// The name of the app as defined by the `Info.plist`.

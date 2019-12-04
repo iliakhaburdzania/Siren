@@ -808,4 +808,20 @@ extension SirenTests {
         XCTAssertEqual(Bundle.localizedString(forKey: "Update", andForceLocalization: language), "Cập nhật")
     }
     
+    func testGeorgianLocalization() {
+        let language: Localization.Language = .georgian
+
+        // Update Available
+        XCTAssertEqual(Bundle.localizedString(forKey: "Update Available", andForceLocalization: language), "განახლება არის ხელმისაწვდომი")
+
+        // Next time
+        XCTAssertEqual(Bundle.localizedString(forKey: "Next time", andForceLocalization: language), "სხვა დროს")
+
+        // Skip this version
+        XCTAssertEqual(Bundle.localizedString(forKey: "Skip this version", andForceLocalization: language), "ვერსიის გამოტოვება")
+
+        // Update
+        XCTAssertEqual(Bundle.localizedString(forKey: "Update", andForceLocalization: language), "განახლება")
+    }
+    
 }
